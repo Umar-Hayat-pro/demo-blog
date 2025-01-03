@@ -39,7 +39,7 @@ gem "jbuilder"
 gem "tzinfo-data", platforms: %i[ mswin mswin64 mingw x64_mingw jruby ]
 
 # Reduces boot times through caching; required in config/boot.rb
-gem "bootsnap", require: false
+gem "bootsnap", require:false
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
@@ -58,6 +58,7 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+  gem 'guard', '~> 2.19', '>= 2.19.1'
 end
 
 group :test do
@@ -65,3 +66,9 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "better_errors", "~> 2.10"
+
+gem "bulma-rails", "~> 1.0"
+
+gem "simple_form", "~> 5.3"
